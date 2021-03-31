@@ -1,0 +1,45 @@
+@charset "UTF-8";
+/* タブレット向け */
+@media all and (max-width: 1000px) {
+	.flax-list {
+		flex-wrap: wrap; /* 折り返す */
+	}
+	.flax-list li {
+		width: 33%;
+	}
+	/* メニューリスト設定 */
+	#menu ul li:nth-child(3n) {
+		border-right: solid 0;
+	}
+	#menu ul li:nth-child(n+4) {
+		border-top: solid 1px #A8C442;
+	}
+	
+}
+
+/* スマホ向け */
+@media all and (max-width: 670px) {
+	.flax-list {
+		flex-wrap: wrap; /* 折り返す */
+	}
+	.flax-list li {
+		width: 50%;
+	}
+/* メニューリスト設定 */
+	#menu ul li:nth-child(2n+0) {
+		border-right: solid 0;
+	}
+		#menu ul li:nth-child(2n+1) {
+		border-right: solid 1px #A8C442;
+	}
+	#menu ul li:nth-child(n+3) {
+		border-top: solid 1px #A8C442;
+	}
+	
+/* ロゴの大きさ */
+	#title img {
+		width: 400px;
+	}
+	
+	
+}
