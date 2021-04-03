@@ -73,7 +73,7 @@ body {
 /* リストの詳細設定 */
 .flax-list li {
 	flex: auto;
-	border-right: solid 1px #A8C442;
+	border-right: dashed 1px #A8C442;
 	font-size: 12px;
 	letter-spacing: 1px;
 	line-height: 16px;
