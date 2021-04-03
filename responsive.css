@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /* タブレット向け */
-@media all and (max-width: 1000px) {
+@media screen and (max-width: 1000px) {
 	.flax-list {
 		flex-wrap: wrap; /* 折り返す */
 	}
@@ -18,28 +18,99 @@
 }
 
 /* スマホ向け */
-@media all and (max-width: 670px) {
+@media screen and (max-width: 670px) {
+	
+/* 全体のコンテナー設定 */
+	#container {
+		padding: 0 5%;
+	}
+	/* ヘッダー全体の設定 */
+	#blog-title {
+		padding: 20px 0 10px;
+		text-align: center;
+	}
+	/* ロゴの大きさ */
+	#title img {
+		width: 100%;
+	}
+	/* タイトル説明の設定 */
+	#blog-caption {
+		font-size: 14px;
+		letter-spacing: 2px;
+		margin-top: 5px;
+	}
+	/* メニューリストの全体設定 */
 	.flax-list {
 		flex-wrap: wrap; /* 折り返す */
 	}
 	.flax-list li {
 		width: 50%;
 	}
-/* メニューリスト設定 */
-	#menu ul li:nth-child(2n+0) {
+	/* リストの可変設定 */
+	#menu ul li:nth-child(2n+0) { /* 偶数の子要素 */
 		border-right: solid 0;
 	}
-		#menu ul li:nth-child(2n+1) {
+	#menu ul li:nth-child(2n+1) { /* 奇数の子要素 */
 		border-right: solid 1px #A8C442;
 	}
-	#menu ul li:nth-child(n+3) {
+	#menu ul li:nth-child(3n) { /* 3番目の子要素 */
 		border-top: solid 1px #A8C442;
 	}
 	
-/* ロゴの大きさ */
-	#title img {
-		width: 400px;
+	/* スライド設定 */
+	.slides {
+		position: relative; /* スライド画像を相対的位置にする */
+		margin-top: 5px;
 	}
+	/* チェンジボタンの体裁設定 */
+	.change-btn-wrapper {
+		text-align: center;
+		color: #FFF;
+		opacity: 0.8;
+		width: 90%;
+		font-size: 30px;
+		position: absolute; /* ボタンを絶対的位置にする */
+		top: 320px; left: 0;
+		right: 0; bottom: 0;
+	}
+	.change-btn:hover {
+	color: #FFF;
+	}
+	.slides img {
+		width: 100%;
+		margin-top: 10px;
+	}
+	/* インデックスボタンの設定 */
+	.index-btn-wrapper {
+		width: 100%;
+	}
+	/* 挨拶文 */
+	.start-letter {
+		width: 100%;
+	}
+	
+	/* イベント部分カコミ */
+	.items {
+		flex-direction: column; /* カコミ横並び */
+	}
+	.items a {
+		width: 100%;
+		margin: 0 auto 15px;
+	}
+	
+	#newinfo {
+		padding-left: 0;
+	}
+	#newinfo dt {
+		width: 100%;
+	}
+	#newinfo dd {
+		font-size: 14px;
+		padding-left: 0;
+		margin-bottom: 20px;
+	}
+	
+
 	
 	
 }
