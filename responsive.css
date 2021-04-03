@@ -48,6 +48,9 @@
 		padding: 1px 0 3px 0;
 		font-size: 14px;
 	}
+	.menu-btn:hover {
+		background: #fff;
+	}
 	/* リストの可変設定 */
 	#menu ul li:nth-child(2n+0) { /* 偶数の子要素 */
 		border-right: solid 0;
