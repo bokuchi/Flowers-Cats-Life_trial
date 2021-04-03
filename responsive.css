@@ -51,7 +51,7 @@
 		border-right: solid 0;
 	}
 	#menu ul li:nth-child(2n+1) { /* 奇数の子要素 */
-		border-right: solid 1px #A8C442;
+		border-right: dashed 1px #A8C442;
 	}
 	#menu ul li:nth-child(3n) { /* 3番目の子要素 */
 		border-top: solid 1px #A8C442;
