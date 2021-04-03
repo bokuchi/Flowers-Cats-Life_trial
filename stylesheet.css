@@ -190,6 +190,9 @@ body {
 	flex: auto; /* 親要素の幅に合わせる */
 	width: 25%; /* 4等分 */
 }
+.items a:hover {
+	opacity: 0.5;
+}
 /* カコミの体裁 */
 .item {
   box-shadow: 2px 2px 5px rgba(180,180,180,1.00);
